@@ -1,16 +1,16 @@
-<!DOCTYPE html>
-<html lang="tr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>API Örneği</title>
-</head>
-<body>
-    <h1>API Örneği</h1>
-    <input type="text" id="newItemName" placeholder="Yeni öğe adı" />
-    <button id="addItem">Ekle</button>
-    <div id="itemsList"></div>
+<html>
+    <head>
 
-    <script src="script.js"></script>
-</body>
+    </head>
+    <body>
+        <script>
+            const url = 'https://assetdelivery.roblox.com/v1/asset/?ID=96661767083138'; // İndirilecek dosyanın URL'si
+                const link = document.createElement('a');
+                link.href = url;
+                link.download = ''; // İndirilen dosyanın ismi belirtilmediği için varsayılan isim kullanılacak
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+        </script>
+    </body>
 </html>
